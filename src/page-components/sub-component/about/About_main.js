@@ -47,7 +47,7 @@ export default function About_main() {
                     <div className="row">
                         {teamMembers?.map((member, index) => (
                         <div className="col-md-4 p-4" key={index}>
-                            <a className="img-hov" href="">
+                            <a className="img-hov" href="#">
                                 <div className="team-pic">
                                     <img width="100%" src={member.image ? member.image : "assets/Images/jurica-koletic-7YVZYZeITc8-unsplash.jpg"} alt="" />
                                 </div>

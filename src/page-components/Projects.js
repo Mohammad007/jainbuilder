@@ -4,8 +4,8 @@ import { base_url } from '../baseURL'
 import Footer from '../main-components/Footer'
 import Header from '../main-components/Header'
 import { amenitiesData, projectdiscoverData, projectlistData, projectsdetailsData, projectserviceData } from '../redux/sliceData/sliceData'
-import Projects_banner from './sub-component/projects/Projects_banner'
-import Projects_main from './sub-component/projects/Projects_main'
+import ProjectsBanner from './sub-component/projects/Projects_banner'
+import ProjectsMain from './sub-component/projects/Projects_main'
 
 export default function Projects() {
   const dispatch = useDispatch()
@@ -40,8 +40,8 @@ export default function Projects() {
   return (
     <>
     <Header/>
-<Projects_banner/>
-<Projects_main/>
+<ProjectsBanner/>
+<ProjectsMain/>
     <Footer/>
     </>
   )

@@ -9,8 +9,8 @@ import Home from '../page-components/Home';
 import Products from '../page-components/sub-component/Redevelopment/ReDev';
 import Residential from '../page-components/sub-component/Residential/Residential';
 import Projects from '../page-components/Projects';
-import Project_detail from '../page-components/Project_detail';
-import Project_Type from '../page-components/Project_Type';
+import ProjectDetail from '../page-components/Project_detail';
+import ProjectType from '../page-components/Project_Type';
 import Services from '../page-components/Services';
 import SingleProduct from '../page-components/sub-component/Redevelopment/ReDevDesc';
 import ReDevelopment from '../page-components/sub-component/projects-type/ReDevelopment';
@@ -29,7 +29,7 @@ export default function RouterPage() {
                 <Route path='/contact' exact element={<Contact/>}></Route>
                 <Route path='/services' exact element={<Services/>}></Route>
                 <Route path='/projects' exact element={<Projects/>}></Route>
-                <Route path='/projects-type' exact element={<Project_Type/>}></Route>
+                <Route path='/projects-type' exact element={<ProjectType/>}></Route>
                 <Route path='/far-calculator' exact element={<FAR/>}></Route>
                 <Route path='/approval-cost' exact element={<ApprovalCost/>}></Route>
                 {/* <Route path='products' element={<SharedProductLayout />}>
@@ -49,7 +49,7 @@ export default function RouterPage() {
 
                 <Route path='/construction-cost' exact element={<ConstructionCost/>}></Route>
                 <Route path='/redevelopment' element={<ReDevelopment/>}></Route>
-                <Route path='/project-detail/:productId' element={<Project_detail/>}></Route>
+                <Route path='/project-detail/:productId' element={<ProjectDetail/>}></Route>
                 </Routes>
         </Router>
     </div>

@@ -31,7 +31,7 @@ export default function Contact_main() {
         fetch(`${base_url}/contacts`, requestOptions)
         .then(response => response.json())
         .then(result => {
-            if(result.status == "success"){
+            if(result.status === "success"){
                 setMessage('Message sent successfully');
                 setTimeout(() => {
                     setMessage('');
@@ -47,7 +47,7 @@ export default function Contact_main() {
             <div className="row">
                 <div className="col-lg-4 pe-0">
                     <div className="map">
-                        <iframe height="100%" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.73907005717!2d76.81307299667618!3d28.646677259922765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1653207088526!5m2!1sen!2sin"  style={{border:'0px'}} loading="lazy" ></iframe>
+                        <iframe height="100%" width="100%" title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.73907005717!2d76.81307299667618!3d28.646677259922765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1653207088526!5m2!1sen!2sin"  style={{border:'0px'}} loading="lazy" ></iframe>
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-8 footer-form-bg d-flex align-items-center">

@@ -5,7 +5,7 @@ import Footer from '../main-components/Footer';
 import Header from '../main-components/Header';
 import { blogAddData, categoriesAddData, collapsesAddData, interiorsAddData, serviceAddData, settingAddData, welcomeAddData } from '../redux/sliceData/sliceData';
 import Banner from './sub-component/home/Banner';
-import Home_main from './sub-component/home/Home_main';
+import HomeMain from './sub-component/home/Home_main';
 
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
 const dispatch = useDispatch();
 
   useEffect(() => {
+
     ;(async () => {
       const response = await fetch(`${base_url}/settings`);
       const data = await response.json();
@@ -42,6 +43,7 @@ const dispatch = useDispatch();
       const data6 = await response6.json();
       dispatch(categoriesAddData(data6.categories));
     })();
+
   }, []);
 
   return (
@@ -49,7 +51,7 @@ const dispatch = useDispatch();
     <Header/>
     <Banner/>
   
-    <Home_main/>
+    <HomeMain/>
    <Footer/>
     </>
   )

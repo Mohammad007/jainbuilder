@@ -5,7 +5,7 @@ import { useState } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import VisibilitySensor from "react-visibility-sensor";
 // import Pannellum from './Pannellum';
-import Pannellum1 from './Pannellum';
+// import Pannellum1 from './Pannellum';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Parallaximg from './Parallaximg';
 import { useSelector } from 'react-redux';

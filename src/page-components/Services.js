@@ -4,8 +4,8 @@ import { base_url } from '../baseURL';
 import Footer from '../main-components/Footer';
 import Header from '../main-components/Header';
 import { ourservicesData, servicelistData, servicesmarksData, whatweoffersData } from '../redux/sliceData/sliceData';
-import Services_banner from './sub-component/services/Services_banner';
-import Services_main from './sub-component/services/Services_main';
+import ServicesBanner from './sub-component/services/Services_banner';
+import ServicesMain from './sub-component/services/Services_main';
 
 export default function Services() {
   const dispatch = useDispatch()
@@ -34,8 +34,8 @@ export default function Services() {
   return (
     <>
     <Header/>
-    <Services_banner/>
-    <Services_main/>
+    <ServicesBanner/>
+    <ServicesMain/>
 
     <Footer/>
     </>

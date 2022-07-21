@@ -4,8 +4,6 @@ const ConstructionMain = () => {
   return (
    <>
    
-   
-
 	{/* <!-- collapse-map starts --> */}
 	<section className="collapse-ma pt-140 pb-140">
 		<div className="welcome-txt text-center mb-5"><h4>Get House Construction Cost in Delhi</h4></div>
@@ -39,7 +37,7 @@ const ConstructionMain = () => {
 						<p className="d-flex">
 							<span className="li-style">►</span>
 							<span>
-					Price range is for estimation purpose only. For the exact quote, please schedule a meeting with our home consultant by calling at <a href="">9599818105</a>.
+					Price range is for estimation purpose only. For the exact quote, please schedule a meeting with our home consultant by calling at <a href="#">9599818105</a>.
 				</span>
 				</p>
 					</li>
