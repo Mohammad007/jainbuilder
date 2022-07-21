@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+    <title>Jain Builders - Home</title>
+	<link rel="stylesheet" href="assets/Css/style.css">
+	<link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/Css/all.css">
+	<link rel="stylesheet" href="assets/OwlCarousel/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/OwlCarousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+	<!-- W<link rel="stylesheet" href="Css/fontawesome.min.css"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.css"
+        integrity="sha512-UoT/Ca6+2kRekuB1IDZgwtDt0ZUfsweWmyNhMqhG4hpnf7sFnhrLrO0zHJr2vFp7eZEvJ3FN58dhVx+YMJMt2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+
+
+    
+	<script src="assets/Js/jquery-3.6.0.min.js"></script>
+	<script src="assets/OwlCarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+	<script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script> -->
+
+	<script src="assets/Js/wrap.js"></script>
+	
+	
+	<!-- <script src="js/panolens.min.js"></script> -->
+	
+	
+	<script>
+		const nextIcon = '<i class="fa fa-angle-right"></i>';
+		const prevIcon = '<i class="fa fa-angle-left"></i>';
+
+		$('.owl-carousel').owlCarousel({
+			items: 3,
+			loop: true,
+			nav: true,
+			dots: false,
+			navText: [
+				prevIcon,
+				nextIcon
+			],
+			autoPlay: true,
+			autoplaySpeed: 1000,
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items: 1,
+					nav: true
+				},
+				768: {
+					items: 2,
+					// nav:false
+				},
+				992: {
+					items: 3,
+					nav: true,
+					// loop:false
+				}
+			}
+
+
+		});
+
+	</script>
+	<script>
+		$(".carousel-indicators button").on('click', function(){
+			$(this).siblings().removeClass('active')
+			$(this).addClass('active');
+		})
+		</script>
+	<script>
+		window.addEventListener('scroll', function () {
+			let header = document.querySelector('header');
+			let windowPosition = window.scrollY > 0;
+			header.classList.toggle('scrolling-active', windowPosition);
+		})
+	</script>
+	
+  </body>
+</html>

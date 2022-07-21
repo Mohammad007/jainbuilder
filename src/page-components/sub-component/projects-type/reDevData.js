@@ -1,0 +1,50 @@
+const products = [
+   
+        {
+            id:1,
+            img:'assets/Images/project1.jpg',
+            subtitle:'condo',
+            title:'Luxury Residence'
+        },
+        {
+            id:2,
+            img:'assets/Images/project2.jpg',
+            subtitle:'condo',
+            title:'Luxury Residence'
+        },
+        {
+            id:3,
+            img:'assets/Images/project3.jpg',
+            subtitle:'condo',
+            title:'Luxury Residence'
+        },
+        {
+            id:4,
+            img:'assets/Images/project4.jpg',
+            subtitle:'condo',
+            title:'Luxury Residence'
+        },
+        {
+            id:5,
+            img:'assets/Images/project5.jpg',
+            subtitle:'condo',
+            title:'Luxury Residence'
+        },
+        {
+            id:6,
+            img:'assets/Images/project6.jpg',
+            subtitle:'condo',
+            title:'Luxury Residence'
+        },
+        {
+            id:7,
+            img:'assets/Images/project2.jpg',
+            subtitle:'condo',
+            title:'Luxury Residence'
+        },
+       
+];
+  
+
+
+export default products;
